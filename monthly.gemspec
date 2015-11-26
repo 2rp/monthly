@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "monthly"
   spec.version       = Monthly::VERSION
   spec.authors       = ["Søren Torp Petersen"]
-  spec.email         = ["stp@munintech.dk"]
+  spec.email         = ["soeren@borigo.dk"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Find out how many partial months there are between to dates.}
+  spec.description   = %q{If you have a monthly subscription of $1 per month, and a customer should pay for a period of 12.1.2015–4.3.2015, you can ask Monthly how many months that corresponds to}
+  spec.homepage      = "https://github.com/2rp/monthly/"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
