@@ -1,6 +1,6 @@
 # Monthly
 
-Helps you find out many partial months (e.g. 1.3) there are between to dates. I use it for handling a prorated, monthly billing cycle.
+Helps you find out how many partial months (e.g. 1.3) there are between to dates. I use it for handling a prorated, monthly billing cycles.
 
 
 ## Installation
