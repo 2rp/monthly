@@ -71,6 +71,15 @@ module Monthly
         end
       end
 
+      context "1 day in end of month and year (31.12.2015–31.12.2015)" do
+        let(:from) { Date.new(2015, 12, 31) }
+        let(:to) { Date.new(2015, 12, 31) }
+
+        it "returns 0 (1 - 30/30)" do
+          expect(result).to eq(0)
+        end
+      end
+
       context "1 year, 1 month, 1, day (1.1.2015–1.2.2016)" do
         let(:from) { Date.parse('1.1.2015') }
         let(:to) { Date.parse('1.2.2016') }

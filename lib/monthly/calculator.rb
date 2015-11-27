@@ -35,7 +35,8 @@ module Monthly
     end
 
     def last_day_of_month(date)
-      Date.new(date.year, date.month + 1, 1).prev_day.day
+      date_next_month = date.next_month
+      Date.new(date_next_month.year, date_next_month.month, 1).prev_day.day
     end
 
   end
