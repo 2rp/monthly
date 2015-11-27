@@ -62,6 +62,15 @@ module Monthly
         end
       end
 
+      context "last month of year (31.12.2015–31.12.2015)" do
+        let(:from) { Date.new(2015, 12, 31) }
+        let(:to) { Date.new(2015, 12, 31) }
+
+        it "returns period" do
+          expect(result).to eq([{from: from, to: to}])
+        end
+      end
+
     end
   end
 end
