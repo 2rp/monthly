@@ -21,6 +21,8 @@ Or install it yourself as:
 
 ## Usage
 
+### Partial Months
+
 If you have a monthly subscription of $1 per month, and a customer should pay for a period of 12.1.2015–4.3.2015, you can ask Monthly how many months that corresponds to:
 
 ```
@@ -28,6 +30,17 @@ from = Date.parse '12.1.2015'
 to = Date.parse '3.2.2015'
 days_per_month = 30 # common practice
 Monthly.partial_months(from, to, days_per_month) # 0.7333333333333333
+```
+
+### Split period into months
+
+```
+from = Date.parse '1.1.2015'
+to = Date.parse '3.2.2015'
+Monthly.periods_by_month(from, to)
+# Returns:
+# {:from=>#<Date: 2015-01-01 ((2457024j,0s,0n),+0s,2299161j)>, :to=>#<Date: 2015-01-31 ((2457054j,0s,0n),+0s,2299161j)>}
+# {:from=>#<Date: 2015-02-01 ((2457055j,0s,0n),+0s,2299161j)>, :to=>#<Date: 2015-02-03 ((2457057j,0s,0n),+0s,2299161j)>}
 ```
 
 ## Development
